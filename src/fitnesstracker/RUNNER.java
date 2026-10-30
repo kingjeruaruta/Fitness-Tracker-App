@@ -20,7 +20,7 @@ public class RUNNER extends JFrame implements ActionListener {
         setTitle("FITNESS TRACKER APP");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        lblfittrack = new JLabel("FITNESS TRACKER");
+        lblfittrack = new JLabel("FITNESS");
         lblfittrack.setBounds(450, 5, 150, 75);
         add(lblfittrack);
         
