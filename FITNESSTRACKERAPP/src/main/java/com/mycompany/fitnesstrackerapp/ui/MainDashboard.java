@@ -126,7 +126,7 @@ public class MainDashboard extends JFrame implements ActionListener{
         this.dispose();
         }
         if(e.getSource() == btnLogout){
-            LoginForm app = new LoginForm();
+            LoginFormUI app = new LoginFormUI();
         app.setVisible(true);
 
         this.dispose();

@@ -11,21 +11,14 @@ import javax.swing.*;
  *
  * @author User
  */
-public class LoginFormUI {
-    
-
-/**
- *
- * @author User
- */
-public class LoginForm extends JFrame implements ActionListener {
+public class LoginFormUI extends JFrame implements ActionListener {
     
     JLabel lblUsername,lblpassword,lblTitle;
     JPasswordField pfpassword;
     JTextField tfusername;
     JButton btnLogin, btnRegister;
     
-    LoginForm(){
+    LoginFormUI(){
         setLayout(null);
         setSize(1000, 700);
         setTitle("Login");

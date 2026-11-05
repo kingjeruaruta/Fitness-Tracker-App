@@ -7,16 +7,9 @@ package com.mycompany.fitnesstrackerapp.ui;
  *
  * @author User
  */
-public class RegisterForm {
-    
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
-
-/**
- *
- * @author User
- */
 public class RegisterForm extends JFrame implements ActionListener{
     JLabel lblTitle, lblName, lblUsername;
     JLabel lblEmail, lblPassword, lblConfirmPassword;
@@ -88,7 +81,7 @@ public class RegisterForm extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == btnCancel){
-            LoginForm app = new LoginForm();
+            LoginFormUI app = new LoginFormUI();
         app.setVisible(true);
 
         this.dispose();
