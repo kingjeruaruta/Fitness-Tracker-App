@@ -133,26 +133,29 @@ public class MainDashboard extends JFrame implements ActionListener{
 public void actionPerformed(ActionEvent e) {
 
     if(e.getSource() == btnWorkout){
-        openPanel("Workout Panel", new WorkoutPanels());
+    openPanel("Workout Panel", new WorkoutPanels());
     }
     else if(e.getSource() == btnMeals){
-        openPanel("Meals Panel", new MealsPanel());
+    MealPanel app = new MealPanel();
+    app.setVisible(true);
+    this.dispose();
     }
     else if(e.getSource() == btnGoals){
-        openPanel("Goals Panel", new GoalsPanel());
+    openPanel("Goals Panel", new GoalsPanel());
     }
     else if(e.getSource() == btnSettings){
-        openPanel("Settings Panel", new SettingsPanel());
+    openPanel("Settings Panel", new SettingsPanel());
     }
     else if(e.getSource() == btnProgress){
-        ProgressPanel app = new ProgressPanel();
-        app.setVisible(true);
-        dispose();
+    ProgressPanel app = new ProgressPanel();
+    app.setVisible(true);
+    dispose();
     }
     else if(e.getSource() == btnLogout){
-        LoginFormUI app = new LoginFormUI();
-        app.setVisible(true);
-        dispose();
+    LoginFormUI app = new LoginFormUI();
+    app.setVisible(true);
+    dispose();
+
     }
-}
+    }
 }

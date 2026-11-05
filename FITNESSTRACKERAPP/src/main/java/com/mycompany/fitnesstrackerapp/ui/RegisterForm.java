@@ -78,45 +78,46 @@ public class RegisterForm extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        
+    if (e.getSource() == btnRegister) {
 
-        if (e.getSource() == btnRegister) {
+        String password = String.valueOf(pfPassword.getPassword());
+        String confirmPassword = String.valueOf(pfConfirmPassword.getPassword());
 
-            String password = String.valueOf(pfPassword.getPassword());
-            String confirmPassword = String.valueOf(pfConfirmPassword.getPassword());
-
-            if (tfName.getText().isEmpty()
-                    || tfUsername.getText().isEmpty()
-                    || tfEmail.getText().isEmpty()
-                    || password.isEmpty()
-                    || confirmPassword.isEmpty()) {
-
-                JOptionPane.showMessageDialog(this,
-                        "Please fill in all fields.");
-                return;
-            }
-
-            if (!password.equals(confirmPassword)) {
-
-                JOptionPane.showMessageDialog(this,
-                        "Passwords do not match.");
-                return;
-            }
+        if (tfName.getText().isEmpty()
+                || tfUsername.getText().isEmpty()
+                || tfEmail.getText().isEmpty()
+                || password.isEmpty()
+                || confirmPassword.isEmpty()) {
 
             JOptionPane.showMessageDialog(this,
-                    "Registration Successful!");
-
-            LoginFormUI app = new LoginFormUI();
-            app.setVisible(true);
-
-            dispose();
+                    "Please fill in all fields.");
+            return;
         }
 
-        if (e.getSource() == btnCancel) {
+        if (!password.equals(confirmPassword)) {
 
-            LoginFormUI app = new LoginFormUI();
-            app.setVisible(true);
-
-            dispose();
+            JOptionPane.showMessageDialog(this,
+                    "Passwords do not match.");
+            return;
         }
+
+        JOptionPane.showMessageDialog(this,
+                "Registration Successful!");
+
+        LoginFormUI app = new LoginFormUI();
+        app.setVisible(true);
+
+        dispose();
+    }
+
+    else if (e.getSource() == btnCancel) {
+
+        LoginFormUI app = new LoginFormUI();
+        app.setVisible(true);
+
+        dispose();
     }
 }
+    }
+
