@@ -1,24 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.fitnesstrackerapp.ui;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
-/**
- *
- * @author User
- */
+
 public class LoginFormUI extends JFrame implements ActionListener {
     
-    JLabel lblUsername,lblpassword,lblTitle;
+    JLabel lblUsername, lblpassword, lblTitle;
     JPasswordField pfpassword;
     JTextField tfusername;
     JButton btnLogin, btnRegister;
     
-    LoginFormUI(){
+    public LoginFormUI(){
         setLayout(null);
         setSize(1000, 700);
         setTitle("Login");
