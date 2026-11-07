@@ -28,7 +28,11 @@ public class MainDashboard extends JFrame implements ActionListener{
         lblTitle = new JLabel("FITNESS TRACKER DASHBOARD");
         lblTitle.setBounds(300, 40, 400, 50);
         add(lblTitle);
-
+        
+        lblCalories = new JLabel("");
+        lblCalories.setBounds(20, 40, 150, 50);
+        pnlCalories.add(lblCalories);
+//btn
         btnHome = new JButton("HOME");
         btnHome.setBounds(50, 130, 150, 50);
         add(btnHome);
@@ -56,7 +60,7 @@ public class MainDashboard extends JFrame implements ActionListener{
         btnLogout = new JButton("LOGOUT");
         btnLogout.setBounds(50, 550, 150, 50);
         add(btnLogout);
-
+//pnl
         pnlWorkouts = new JPanel();
         pnlWorkouts.setLayout(null);
         pnlWorkouts.setBorder(
@@ -76,10 +80,6 @@ public class MainDashboard extends JFrame implements ActionListener{
         );
         pnlCalories.setBounds(480, 130, 200, 130);
         add(pnlCalories);
-
-        lblCalories = new JLabel("");
-        lblCalories.setBounds(20, 40, 150, 50);
-        pnlCalories.add(lblCalories);
 
         pnlGoal = new JPanel();
         pnlGoal.setLayout(null);
