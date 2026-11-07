@@ -104,7 +104,7 @@ public class MainDashboard extends JFrame implements ActionListener{
         lblRecentActivity = new JLabel("");
         lblRecentActivity.setBounds(20, 40, 600, 150);
         pnlRecentActivity.add(lblRecentActivity);
-
+//actionlistener
         btnHome.addActionListener(this);
         btnWorkout.addActionListener(this);
         btnMeals.addActionListener(this);
