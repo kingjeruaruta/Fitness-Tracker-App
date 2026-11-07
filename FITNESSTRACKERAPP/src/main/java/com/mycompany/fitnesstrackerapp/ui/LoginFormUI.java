@@ -17,7 +17,7 @@ public class LoginFormUI extends JFrame implements ActionListener {
         setTitle("Login");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-
+//lbl
         lblTitle = new JLabel("FITNESS TRACKER");
         lblTitle.setBounds(350, 100, 300, 50);
         add(lblTitle);
