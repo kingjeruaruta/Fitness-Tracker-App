@@ -71,7 +71,7 @@ public class MainDashboard extends JFrame implements ActionListener{
 
         lblWorkouts = new JLabel("");
         lblWorkouts.setBounds(20, 40, 150, 50);
-        pnlWorkouts.add(lblWorkouts);
+        lblWorkouts.add(lblWorkouts);
 
         pnlCalories = new JPanel();
         pnlCalories.setLayout(null);
