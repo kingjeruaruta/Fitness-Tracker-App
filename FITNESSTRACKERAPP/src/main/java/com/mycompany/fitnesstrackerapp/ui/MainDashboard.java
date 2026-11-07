@@ -76,7 +76,7 @@ public class MainDashboard extends JFrame implements ActionListener{
         pnlCalories = new JPanel();
         pnlCalories.setLayout(null);
         pnlCalories.setBorder(
-            BorderFactory.createTitledBorder("Total Calories")
+        BorderFactory.createTitledBorder("Total Calories")
         );
         pnlCalories.setBounds(480, 130, 200, 130);
         add(pnlCalories);
@@ -84,7 +84,7 @@ public class MainDashboard extends JFrame implements ActionListener{
         pnlGoal = new JPanel();
         pnlGoal.setLayout(null);
         pnlGoal.setBorder(
-            BorderFactory.createTitledBorder("Fitness Goal")
+        BorderFactory.createTitledBorder("Fitness Goal")
         );
         pnlGoal.setBounds(710, 130, 200, 130);
         add(pnlGoal);
@@ -96,7 +96,7 @@ public class MainDashboard extends JFrame implements ActionListener{
         pnlRecentActivity = new JPanel();
         pnlRecentActivity.setLayout(null);
         pnlRecentActivity.setBorder(
-            BorderFactory.createTitledBorder("Recent Activity")
+        BorderFactory.createTitledBorder("Recent Activity")
         );
         pnlRecentActivity.setBounds(250, 300, 660, 250);
         add(pnlRecentActivity);
@@ -127,7 +127,6 @@ public class MainDashboard extends JFrame implements ActionListener{
 
     frame.setVisible(true);
 }
-
     
     @Override
 public void actionPerformed(ActionEvent e) {
