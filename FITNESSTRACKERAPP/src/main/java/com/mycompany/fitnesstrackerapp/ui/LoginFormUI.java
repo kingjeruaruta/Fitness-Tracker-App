@@ -25,19 +25,19 @@ public class LoginFormUI extends JFrame implements ActionListener {
         lblUsername = new JLabel("USERNAME:");
         lblUsername.setBounds(250, 250, 150, 50);
         add(lblUsername);
-
-        tfusername = new JTextField();
-        tfusername.setBounds(400, 250, 250, 50);
-        add(tfusername);
-
+        
         lblpassword = new JLabel("PASSWORD:");
         lblpassword.setBounds(250, 330, 150, 50);
         add(lblpassword);
-
+//tf
+        tfusername = new JTextField();
+        tfusername.setBounds(400, 250, 250, 50);
+        add(tfusername);
+//pf
         pfpassword = new JPasswordField();
         pfpassword.setBounds(400, 330, 250, 50);
         add(pfpassword);
-
+//btn
         btnLogin = new JButton("LOGIN");
         btnLogin.setBounds(300, 430, 150, 50);
         add(btnLogin);
