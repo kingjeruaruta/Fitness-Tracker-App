@@ -112,7 +112,7 @@ public class MainDashboard extends JFrame implements ActionListener {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
-//functions yaa
+//functions to sir
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnWorkout) {
