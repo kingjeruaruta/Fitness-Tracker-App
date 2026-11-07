@@ -104,8 +104,6 @@ public class MainDashboard extends JFrame implements ActionListener {
         btnSettings.addActionListener(this);
         btnLogout.addActionListener(this);
     }
-
-    
     private void openPanel(String title, JPanel panel) {
         JFrame frame = new JFrame(title);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -114,6 +112,8 @@ public class MainDashboard extends JFrame implements ActionListener {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
+    
+    
 //functions to sir
     @Override
     public void actionPerformed(ActionEvent e) {
