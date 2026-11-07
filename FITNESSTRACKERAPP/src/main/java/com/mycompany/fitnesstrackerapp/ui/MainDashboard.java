@@ -26,6 +26,10 @@ public class MainDashboard extends JFrame implements ActionListener {
         lblTitle.setBounds(300, 40, 400, 50);
         add(lblTitle);
 
+        lblRecentActivity = new JLabel("");
+        lblRecentActivity.setBounds(20, 40, 600, 150);
+        pnlRecentActivity.add(lblRecentActivity);
+        
         btnHome = new JButton("HOME");
         btnHome.setBounds(50, 130, 150, 50);
         add(btnHome);
@@ -90,9 +94,7 @@ public class MainDashboard extends JFrame implements ActionListener {
         pnlRecentActivity.setBounds(250, 300, 660, 250);
         add(pnlRecentActivity);
 
-        lblRecentActivity = new JLabel("");
-        lblRecentActivity.setBounds(20, 40, 600, 150);
-        pnlRecentActivity.add(lblRecentActivity);
+        
 
         btnHome.addActionListener(this);
         btnWorkout.addActionListener(this);
