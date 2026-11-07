@@ -32,6 +32,11 @@ public class MainDashboard extends JFrame implements ActionListener{
         lblCalories = new JLabel("");
         lblCalories.setBounds(20, 40, 150, 50);
         pnlCalories.add(lblCalories);
+
+        lblGoal = new JLabel("");
+        lblGoal.setBounds(20, 40, 150, 50);
+        pnlGoal.add(lblGoal);
+
 //btn
         btnHome = new JButton("HOME");
         btnHome.setBounds(50, 130, 150, 50);
@@ -88,10 +93,6 @@ public class MainDashboard extends JFrame implements ActionListener{
         );
         pnlGoal.setBounds(710, 130, 200, 130);
         add(pnlGoal);
-
-        lblGoal = new JLabel("");
-        lblGoal.setBounds(20, 40, 150, 50);
-        pnlGoal.add(lblGoal);
 
         pnlRecentActivity = new JPanel();
         pnlRecentActivity.setLayout(null);
