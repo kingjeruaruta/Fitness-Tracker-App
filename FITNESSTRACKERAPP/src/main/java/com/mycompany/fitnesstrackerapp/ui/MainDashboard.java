@@ -24,7 +24,7 @@ public class MainDashboard extends JFrame implements ActionListener{
         setTitle("Main Dashboard");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-
+//lbl
         lblTitle = new JLabel("FITNESS TRACKER DASHBOARD");
         lblTitle.setBounds(300, 40, 400, 50);
         add(lblTitle);
