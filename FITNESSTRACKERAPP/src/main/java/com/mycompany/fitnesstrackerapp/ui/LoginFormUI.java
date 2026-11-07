@@ -50,7 +50,7 @@ public class LoginFormUI extends JFrame implements ActionListener {
     
 }
     
-
+//logic
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == btnRegister){
