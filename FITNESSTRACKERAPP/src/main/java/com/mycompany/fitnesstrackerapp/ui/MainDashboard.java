@@ -103,8 +103,7 @@ public class MainDashboard extends JFrame implements ActionListener {
         btnLogout.addActionListener(this);
     }
 
-    // Ang WorkoutPanels, SettingsPanel at GoalsPanel ay JPanel (hindi JFrame),
-    // kaya kailangan natin silang ilagay sa JFrame para makita.
+    
     private void openPanel(String title, JPanel panel) {
         JFrame frame = new JFrame(title);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -113,7 +112,7 @@ public class MainDashboard extends JFrame implements ActionListener {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
-
+//functions yaa
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnWorkout) {
